@@ -17,5 +17,5 @@ script:
   - python setup.py install
   - bash test.sh
 after_success:
-  cd test && codecov && bash <(curl -s https://codecov.io/bash)
+  cd test && codecov && bash <(curl -s https://codecov.io/bash) -t e130394b-038e-4f75-8741-e608ffd2d641
 
